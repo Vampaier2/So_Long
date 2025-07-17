@@ -6,7 +6,7 @@
 /*   By: xalves <xalves@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/10 15:57:12 by xalves            #+#    #+#             */
-/*   Updated: 2025/07/16 15:22:58 by xalves           ###   ########.fr       */
+/*   Updated: 2025/07/17 10:31:21 by xalves           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,19 @@ int	load_textures(t_game *game)
 
 int	render_frame(t_game *game)
 {
+	//int	x = 0, y = 0;
 	mlx_clear_window(game->mlx, game->win);
+	/* while (y <= 2160)
+	{
+		while (x <= 3840)
+		{
+			mlx_put_image_to_window(game->mlx, game->win, game->player.ptr, x, y);
+			x +=64;
+		}
+		x = 0;
+		y += 64;
+	} */
+
 	mlx_put_image_to_window(game->mlx, game->win, game->player.ptr, 0, 0);
 	mlx_put_image_to_window(game->mlx, game->win, game->cheese.ptr, 64, 0);
 	mlx_put_image_to_window(game->mlx, game->win, game->mouse_trap.ptr, 0, 64);

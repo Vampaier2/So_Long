@@ -6,7 +6,7 @@
 /*   By: xalves <xalves@student.42lisboa.com>       +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/07/08 12:00:11 by xalves            #+#    #+#             */
-/*   Updated: 2025/07/16 16:32:32 by xalves           ###   ########.fr       */
+/*   Updated: 2025/07/17 11:21:31 by xalves           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,13 +53,13 @@ void	init_game(t_game *game)
 
 int	main(void)
 {
-	t_game	data;
+	/* t_game	data;
 
 	init_game(&data); // Initialize all values
 	data.mlx = mlx_init();
 	if (!data.mlx)
 		return (1);
-	data.win = mlx_new_window(data.mlx, 1280, 720, "so_long");
+	data.win = mlx_new_window(data.mlx, 3840, 2160, "so_long");
 	if (!data.win)
 	{
 		close_window(&data);
@@ -74,6 +74,6 @@ int	main(void)
 	mlx_hook(data.win, 17, 0, close_window, &data);
 	mlx_key_hook(data.win, key_press, &data);
 	mlx_loop_hook(data.mlx, render_frame, &data);
-	mlx_loop(data.mlx);
+	mlx_loop(data.mlx); */
 	return (0);
 }
